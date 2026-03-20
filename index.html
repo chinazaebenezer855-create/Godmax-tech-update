@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Godmax Tech</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar112" id="navbar">
+        <img src="./img/Untitled_design-removebg-preview.png" alt="Godmax Logo" width="45" height="45" id="logo-btn" class="gt-logo">
+        <div class="logo" >GODMAX TECH</div>
+
+
+        <nav class="nav-links">
+            <a class="nah" href="#" id="services">Services</a>
+            <a class="nah" href="#" id="Portfolio">Portfolio</a>
+            <a class="nah" href="#" id="skill-btn3">Skills</a>
+            <a class="nah" href="#" id="exper-btn">Experience</a>
+            <a class="nah" href="#" id="test-btn">Testimonials</a>
+            <a class="nah" href="#" id="con-btn">Contact</a>
+        </nav>
+
+        <button class="hire-btn" id="hireme">Hire Me</button>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-btn" id="hamburger-btn" onclick="ShowSideBar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Mobile Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-close" onclick="HideSideBar()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="#" onclick="HideSideBar()" id="serv">Services</a>
+            <hr class="hide-lines">
+            <a href="#" onclick="HideSideBar()"  id="Portf">Portfolio</a>
+            <hr class="hide-lines">
+            <a href="#" id="skill-hide-btn" onclick="HideSideBar()">Skills</a>
+            <hr class="hide-lines">
+            <a href="#" id="experience-hide-btn" onclick="HideSideBar()">Experience</a>
+            <hr class="hide-lines">
+            <a href="#" id="testimony-hide-btn" onclick="HideSideBar()">Testimonials</a>
+            <hr class="hide-lines">
+            <a href="#" id="hide-contact-btn" onclick="HideSideBar()">Contact</a>
+            <hr class="hide-lines">
+            <button class="hide-hire-button" id="hide-hire-btn">Hire Me</button>
+        </nav>
+
+        <!-- Overlay -->
+        <div class="sidebar-overlay" id="sidebar-overlay" onclick="HideSideBar()"></div>
+
+
+    </header>
+
+    <!-- HERO -->
+
+    <div class="container112">
+        <section class="hero">
+
+
+            <div class="hero-left">
+                <div class="status" id="logo-name" >● Available for new projects</div>
+
+                <h1>
+                    Hi, I'm <br />
+                    <span>Ebenezer Godwin</span>
+                </h1>
+
+                <p>Full-Stack Developer, Cybersecurity Expert & Graphic Designer building digital excellence.</p>
+
+                <div class="hero-buttons">
+                    <button class="primary" id="start">Start Project <span>→</span></button>
+                    <button class="secondary">
+                        <a href="./resume (1)Godmax .pdf" target="_blank">
+                            View Resume <span class="eye"><i class="fa-regular fa-eye"></i></span>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/godmaxtech?igsh=cHNzZTI5eDF6Ymt5&utm_source=qr"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@godmax_tech?_r=1&_t=ZS-94X9gbgTS2H"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.link/oqwrsu"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+
+                <!-- Mobile-only image + tag -->
+                <div class="mobile-hero-image-wrap">
+                    <img src="./img/tech group.jpeg" alt="Office Team" class="Office-pic-res" />
+                    <div class="tagf topf">
+                        <strong class="React">React</strong>
+                        <div>Expert in<br>Frontend Dev</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop image -->
+            <div class="hero-right">
+                <img src="./img/tech group.jpeg" alt="Office Team" class="Office-pic" />
+                <div class="tag top">
+                    <strong class="React">React</strong>
+                    <div>Expert in<br>Frontend Dev</div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <!-- ABOUT TEXT -->
+
+    <div class="ftxt" id="Transforming">
+        <h2 class="ftxt2">Transforming Ideas into Digital Reality</h2>
+        <p class="ftxt3">
+            I am Godwin Ebenezer, a versatile tech professional with a passion for creating secure, beautiful, and
+            functional
+            digital experiences. With expertise spanning development, design, and security,
+            I bring a unique holistic approach to every project.
+        </p>
+    </div>
+
+    <!-- SERVICE BOXES -->
+
+    <div class="box-container">
+        <div class="boxes">
+            <i class="fa-solid fa-code"></i>
+            <div class="box-txt">
+                <h3>Full-Stack Development</h3>
+                <p>Building scalable web applications using modern stacks like React, Next.js, and Node.js.</p>
+            </div>
+        </div>
+
+
+        <div class="boxes">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="box-txt">
+                <h3>Cybersecurity</h3>
+                <p>Ensuring digital safety through vulnerability assessments, pen-testing, and security audits.</p>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <i class="fa-solid fa-draw-polygon"></i>
+            <div class="box-txt">
+                <h3>UI/UX & Graphics</h3>
+                <p>Designing intuitive interfaces and professional graphics with Figma, Photoshop, and Corel Draw.</p>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <i class="fa-regular fa-file-lines"></i>
+            <div class="box-txt">
+                <h3>VA & Content Services</h3>
+                <p>Expert virtual assistance, CV compilation, copywriting, assignment writing, and content management.
+                </p>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- SKILLS -->
+
+    <section class="sectionq" id="Skill-section">
+        <h1 class="titleq">Technical <span class="qqq">Arsenal</span></h1>
+        <p class="subtitleq">Tools and technologies I use to craft world-class solutions.</p>
+
+        
+        <div class="gridq">
+            <div class="categoryq">
+                <div class="category-titleq">Frontend Development</div>
+                <div class="tagsq">
+                    <div class="tagq">React</div>
+                    <div class="tagq">Next.js</div>
+                    <div class="tagq">HTML5</div>
+                    <div class="tagq">CSS3</div>
+                    <div class="tagq">Tailwind CSS</div>
+                    <div class="tagq">JavaScript</div>
+                    <div class="tagq">TypeScript</div>
+                    <div class="tagq">Bootstrap</div>
+                </div>
+            </div>
+
+            <div class="categoryq">
+                <div class="category-titleq">Backend & Database</div>
+                <div class="tagsq">
+                    <div class="tagq">Node.js</div>
+                    <div class="tagq">Python</div>
+                    <div class="tagq">PHP</div>
+                    <div class="tagq">SQL</div>
+                    <div class="tagq">MongoDB</div>
+                    <div class="tagq">PostgreSQL</div>
+                    <div class="tagq">Firebase</div>
+                </div>
+            </div>
+
+            <div class="categoryq">
+                <div class="category-titleq">Cybersecurity</div>
+                <div class="tagsq">
+                    <div class="tagq">Penetration Testing</div>
+                    <div class="tagq">Network Security</div>
+                    <div class="tagq">Vulnerability Assessment</div>
+                    <div class="tagq">Wireshark</div>
+                    <div class="tagq">Metasploit</div>
+                    <div class="tagq">Nmap</div>
+                </div>
+            </div>
+
+            <div class="categoryq">
+                <div class="category-titleq">Graphic Design & Tools</div>
+                <div class="tagsq">
+                    <div class="tagq">Adobe Photoshop</div>
+                    <div class="tagq">CorelDraw</div>
+                    <div class="tagq">Canva</div>
+                    <div class="tagq">Figma</div>
+                    <div class="tagq">Adobe XD</div>
+                    <div class="tagq">UI/UX Design</div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section class="journey" id="Experience-section">
+        <h1 class="journey-title">Professional Journey</h1>
+        <p class="journey-subtitle">My career progression and key milestones.</p>
+
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="date">📅 01/2025 – 08/2025</div>
+                    <h3>Full Stack Developer & Penetration Tester</h3>
+                    <h4 class="company">Aptech</h4>
+                    <p>Developed responsive web applications using React, Python, and PHP. Conducted penetration testing
+                        to enhance security by 20%. Designed UI/UX prototypes with Figma and optimized RESTful APIs/SQL
+                        databases.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="date">📅 01/2023 – 12/2024</div>
+                    <h3>Virtual Assistant</h3>
+                    <h4 class="company">TLO LLC Company</h4>
+                    <p>Managed client communications via digital platforms, increasing engagement by 30%. Coordinated
+                        digital tasks using Google Suite and created engaging content for online platforms.</p>
+                </div>
+                <div class="timeline-dot etra-dot"></div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="date">📅 01/2020 – 07/2021</div>
+                    <h3>Computer Instructor</h3>
+                    <h4 class="company">Freedom Communications Nig.</h4>
+                    <p>Taught Computer Appreciation Skills and digital literacy with a 95% student pass rate. Developed
+                        instructional content and provided coaching on digital tools.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+
+        <!-- 4th timeline card -->
+        <div class="timeline-extra">
+            <div class="timeline-extra-dot"></div>
+            <div class="timeline-extra-card">
+                <div class="date">📅 01/2019 - 12/2019</div>
+                <h3>Computer Operator</h3>
+                <div class="company">Jiomax Computer Institute</div>
+                <p>Managed client inquiries and digital tasks, improving efficiency by 15%. Handled content formatting,
+                    uploads, and system troubleshooting.</p>
+            </div>
+        </div>
+        
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- SCROLL TO TOP -->
+
+    <p class="my-btn"><i class="fa-solid fa-arrow-down"></i></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonialst" id="testimonies">
+        <h1>What Clients <span>Say</span></h1>
+        <p class="subtitlet">Trusted by industry leaders.</p>
+
+        
+        <div class="cardst">
+            <div class="cardt">
+                <div class="starst">★★★★★</div>
+                <p class="quotet">"Godmax Tech delivered an exceptional e-commerce platform that exceeded our
+                    expectations. The attention to detail and technical expertise is outstanding."</p>
+                <div class="profilet">
+                    <img src="https://i.pravatar.cc/60?img=12" alt="">
+                    <div>
+                        <h4>Adebayo Johnson</h4>
+                        <span>CEO, TechMart Nigeria</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardt">
+                <div class="starst">★★★★★</div>
+                <p class="quotet">"The cybersecurity dashboard Godmax Tech built has significantly improved our threat
+                    detection capabilities. Highly recommended!"</p>
+                <div class="profilet">
+                    <img src="https://i.pravatar.cc/60?img=5" alt="">
+                    <div>
+                        <h4>Sarah Williams</h4>
+                        <span>CTO, SecureNet Solutions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardt">
+                <div class="starst">★★★★★</div>
+                <p class="quotet">"Working with Godmax Tech on our brand identity was a game-changer. The designs
+                    perfectly captured our vision and values."</p>
+                <div class="profilet">
+                    <img src="https://i.pravatar.cc/60?img=8" alt="">
+                    <div>
+                        <h4>Michael Chen</h4>
+                        <span>Product Manager, PayFlow Africa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+        <p>Common questions about my services and process.</p>
+
+        
+        <div class="help-box">
+            <div class="help-header">
+                <span>What services does Godmax Tech offer?</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div class="help-content">
+                <p>We build modern websites, mobile apps and provide cybersecurity services.</p>
+            </div>
+        </div>
+
+        <div class="help-box">
+            <div class="help-header">
+                <span>How long does development take?</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div class="help-content">
+                <p>Most projects take between 2–6 weeks depending on complexity.</p>
+            </div>
+        </div>
+
+        <div class="help-box">
+            <div class="help-header">
+                <span>Do you offer maintenance?</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div class="help-content">
+                <p>Yes, we provide ongoing updates and technical support after launch.</p>
+            </div>
+        </div>
+
+        <div class="help-box">
+            <div class="help-header">
+                <span>What's Your Pricing Structure?</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div class="help-content">
+                <p>Pricing depends on project scope, complexity, and timeline. I offer competitive rates for basic
+                    projects. Contact me for a detailed quote based on your specific requirements.</p>
+            </div>
+        </div>
+
+        <div class="help-box">
+            <div class="help-header">
+                <span>Can You Work With International Clients?</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div class="help-content">
+                <p>I work with clients globally and am experienced in remote collaboration. I'm available across
+                    different time zones and use modern communication tools for seamless project management.</p>
+            </div>
+        </div>
+
+        <div class="help-box">
+            <div class="help-header">
+                <span>What Makes Your Cybersecurity Services Unique?</span>
+                <span class="dropdown-icon">&#9662;</span>
+            </div>
+            <div class="help-content">
+                <p>My cybersecurity approach combines technical expertise with business understanding. I provide
+                    comprehensive assessments, practical recommendations, and ongoing monitoring to protect your digital
+                    assets effectively.</p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="collab-section" id="info1">
+        <div class="collab-container" id="form">
+
+            
+            <div class="collab-left">
+                <h2 class="collab-title">Let's Work Together</h2>
+                <p class="collab-subtext">Have a project in mind? Looking for a cybersecurity audit or a stunning
+                    design? I'm ready to help you achieve your goals.</p>
+
+                <div class="collab-card">
+                    <div class="collab-icon email-icon">✉</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>godmaxtechgroup@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="collab-card">
+                    <div class="collab-icon phone-icon">☎</div>
+                    <div>
+                        <h4>Phone || WhatsApp</h4>
+                        <p>(+234) 9155712425</p>
+                    </div>
+                </div>
+
+                <div class="collab-card">
+                    <div class="collab-icon location-icon">📍</div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Owerri, Nigeria (Available Remote)</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/mykndzwg" method="post" id="collabContactForm" class="collab-form">
+                <div class="collab-row">
+                    <div class="collab-input-group">
+                        <label>Name</label>
+                        <input type="text" id="userName" name="name" placeholder="Enter your first name">
+                    </div>
+                    <div class="collab-input-group">
+                        <label>Email</label>
+                        <input type="email" id="userEmail" name="email" placeholder="Enter your email">
+                    </div>
+                </div>
+
+                <div class="collab-input-group">
+                    <label>Subject</label>
+                    <input type="text" id="userSubject" name="subject" placeholder="Enter subject">
+                </div>
+
+                <div class="collab-input-group">
+                    <label>Message</label>
+                    <textarea rows="5" id="userMessage" name="Message"
+                        placeholder="Tell me about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="collab-btn" id="button-send">Send Message ✈️</button>
+                <p id="formResponse1" style="margin-top:15px;font-weight:600;"></p>
+            </form>
+        </div>
+        
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="fav-footer">
+        <div class="fav-footer-container">
+            <div class="fav-footer-top">
+                <div class="fav-footer-left">
+                    <h2 class="fav-logo">GODMAX TECH</h2>
+                    <p class="fav-tagline">Building digital excellence, one pixel at a time.</p>
+                </div>
+                <div class="socials footer-socials">
+                    <a href="https://www.instagram.com/godmaxtech?igsh=cHNzZTI5eDF6Ymt5&utm_source=qr"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@godmax_tech?_r=1&_t=ZS-94X9gbgTS2H"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.link/oqwrsu"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <hr class="fav-divider">
+            <div class="fav-footer-bottom">
+                <p>©️ 2026 Godmax Tech Group. All rights reserved.</p>
+                <p class="fav-made">Made by Godmax Tech <span class="fav-heart">❤</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
