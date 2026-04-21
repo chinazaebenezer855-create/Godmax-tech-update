@@ -206,3 +206,35 @@ fetch(form.action, {
 
 });
 }
+
+
+
+
+
+// featured project
+
+
+const filterButtons = document.querySelectorAll(".filter-btnft");
+const cards = document.querySelectorAll(".cardft");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    // Remove active class
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const filter = button.getAttribute("data-filter");
+
+    cards.forEach(card => {
+      const category = card.getAttribute("data-category");
+
+      if (filter === "all" || filter === category) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
+    });
+
+  });
+});

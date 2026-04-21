@@ -1124,7 +1124,213 @@ body {
   gap: 5px;
 }
 
+
 .fav-heart { color: #ff4d6d; }
+
+
+
+
+
+
+
+/* featured project // updated */
+
+
+.featured-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f7fb;
+}
+
+.featured-header h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #0b0b0c;
+  margin-bottom: 15px;
+}
+
+.featured-header p {
+  font-size: 13px;
+  color: #6c7a89;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .featured-header h1 {
+    font-size: 32px;
+  }
+
+  .featured-header p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-header {
+    padding: 60px 15px;
+  }
+
+  .featured-header h1 {
+    font-size: 26px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+.containerft {
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+/* FILTER BUTTONS */
+.filtersft {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-btnft {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #e0e6ed;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btnft.active {
+  background: #0b2545;
+  color: white;
+}
+
+/* CARDS */
+.cardsft {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.cardft:hover{
+   box-shadow: 0 0 40px rgba(15, 15, 15, 0.3);
+   transform: translateY(-7px);
+   
+img {
+  filter: blur(2px);
+
+}
+
+
+.fa-arrow-right-from-bracket{
+  opacity: 100;
+}
+
+}
+
+.fa-arrow-right-from-bracket{
+  font-size: 40px;
+  padding-left: 230px;
+  transform: rotate(-76deg);
+  color: white;
+  
+}
+
+.fa-arrow-right-from-bracket{
+  
+  opacity: 0;
+}
+
+.fa-arrow-right-from-bracket:hover{
+
+  color:#94a3b8;
+
+}
+
+
+
+.cardft {
+  background: #f1f7f7;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.cardft img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* .cardft img:hover {
+  filter: blur(2px);
+
+} */
+
+.cardft h3 {
+  margin-top: 10px;
+}
+
+.cardft p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.links{
+  text-decoration: none;
+  color:black;
+}
+
+.web-typez{
+
+  font-size: 12px;
+  border: 2px solid #88888b;
+  width: 50px;
+  margin-top:5px;
+  border-radius: 8px;
+  padding-left: 3px;
+} 
+.web-type{
+  font-size: 12px;
+  border: 2px solid #88888b;
+  width: 110px;
+  margin-top:0px;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+
+/* HIDE */
+.hide {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cardsft {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cardsft {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ============================================
    RESPONSIVE BREAKPOINTS
@@ -1259,9 +1465,9 @@ body {
   .my-btn { bottom: 16px; right: 16px; }
 }
 
-/* Very small screens */
+/* Very small screens*/
 @media (max-width: 380px) {
   .logo { font-size: 12px; }
   .gt-logo { width: 36px !important; height: 36px !important; }
   .hero-left h1 { font-size: 26px; }
-}
+} 
