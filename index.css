@@ -779,6 +779,35 @@ body {
 }
 
 /* ============================================
+   WHATSAPP CHAT BUTTON
+   ============================================ */
+
+.whatsapp-btn {
+  background-color: #25D366;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: white;
+  font-size: 28px;
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================
    SCROLL TO TOP
    ============================================ */
 
@@ -1463,6 +1492,7 @@ img {
   .fav-footer-bottom { flex-direction: column; gap: 8px; }
 
   .my-btn { bottom: 16px; right: 16px; }
+  .whatsapp-btn { bottom: 78px; right: 16px; width: 46px; height: 46px; font-size: 24px; }
 }
 
 /* Very small screens*/
